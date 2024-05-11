@@ -1,7 +1,7 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
-let password = '@2DdWeB&QMm6';
-let proxyIP = 'cdn.xn--b6gac.eu.org';
+let password = 'auto';
+let proxyIP = '';
 
 let addresses = [
 	//当sub为空时启用本地优选域名/优选IP，若不带端口号 TLS默认端口为443，#号后为备注别名
@@ -16,7 +16,7 @@ let addresses = [
 	//'[2606:4700:e7:25:4b9:f8f8:9bfb:774a]#IPv6也OK',
 ];
 
-let sub = '';// 'sub.dylink.dynv6.net' 
+let sub = '';// 'trojan.fxxk.dedyn.io' 
 let subconverter = 'url.v1.mk';// clash订阅转换后端，目前使用肥羊的订阅转换功能。自带虚假节点信息防泄露
 let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"; //订阅配置文件
 let RproxyIP = 'false';
